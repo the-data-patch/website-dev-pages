@@ -1,0 +1,163 @@
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+
+.navbar {
+  background-color: #d7f4f6 !important;
+}
+
+.navbar .nav-link {
+  color: #555 !important;
+}
+
+.navbar-brand {
+  color: #555 !important;
+}
+
+.navbar-brand::after {
+  content: "Data Management, Publishing, and Education Services";
+  display: block;
+  font-size: 0.7em;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+/* Hamburger menu icon - just the three lines */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23555555' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Remove the border around the hamburger button */
+.navbar-toggler {
+  border: none !important;
+}
+
+/* Remove the white outline when clicked */
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY & HEADINGS
+   ========================================================================== */
+
+h1, h2, h3 {
+  scroll-margin-top: 80px;
+}
+
+.quarto-title-block h1 {
+  margin-bottom: .25rem;
+}
+
+.quarto-title-block .subtitle {
+  color: #555;
+}
+
+
+/* ==========================================================================
+   HOME PAGE COMPONENTS
+   ========================================================================== */
+
+/* Blurb box */
+.blurb {
+  background: #f8f9fa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  line-height: 1.6;
+}
+
+/* Generic card with logo */
+.generic-card {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  font-size: 2em;
+}
+
+.generic-card .generic-img {
+  float: left;
+  width: 35%;
+  margin-right: 1em;
+  text-align: center;
+}
+
+
+/* ==========================================================================
+   PROFILE CARDS
+   ========================================================================== */
+
+.profile-cards-container {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.profile-card {
+  flex: 1;
+  min-width: 280px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5em;
+  background-color: #fafafa;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 60%;
+  margin-bottom: 1em;
+}
+
+.profile-card .bio {
+  text-align: justify;
+  margin-top: 1em;
+}
+
+
+/* ==========================================================================
+   FOOTNOTES
+   ========================================================================== */
+
+.footnotes ol li {
+  margin-bottom: 1em;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE / MEDIA QUERIES
+   ========================================================================== */
+
+/* Tablet and smaller */
+@media (max-width: 768px) {
+  .navbar-brand::after {
+    display: none;
+  }
+  
+  .generic-card {
+    font-size: 1.1em;
+  }
+  
+  .generic-card .generic-img {
+    float: none;
+    width: 60%;
+    margin: 0 auto 1em;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .generic-card {
+    font-size: 0.95em;
+  }
+  
+  .generic-card .generic-img {
+    width: 70%;
+  }
+}
